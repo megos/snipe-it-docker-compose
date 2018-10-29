@@ -1,8 +1,8 @@
 # Mysql Parameters
-MYSQL_ROOT_PASSWORD=YOUR_SUPER_SECRET_PASSWORD
+MYSQL_ROOT_PASSWORD=snipeit
 MYSQL_DATABASE=snipeit
 MYSQL_USER=snipeit
-MYSQL_PASSWORD=YOUR_snipeit_USER_PASSWORD
+MYSQL_PASSWORD=snipeit
 
 # Email Parameters
 # - the hostname/IP address of your mailserver
@@ -22,7 +22,7 @@ MAIL_ENV_PASSWORD=your_email_password
 APP_ENV=production
 APP_DEBUG=false
 APP_KEY=<<Fill in Later!>>
-APP_URL=http://127.0.0.1:YOUR_PORT_NUMBER
+APP_URL=http://db:3306
 APP_TIMEZONE=US/Pacific
 APP_LOCALE=en
 
