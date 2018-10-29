@@ -5,6 +5,7 @@ services:
   app:
     image: snipe/snipe-it
     restart: unless-stopped
+    env_file: my_env_file
     ports:
       - 8080:80
     depends_on:
