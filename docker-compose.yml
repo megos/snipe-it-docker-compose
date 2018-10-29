@@ -10,6 +10,6 @@ services:
   db:
     image: mysql:5.6
     restart: unless-stopped
-  env_file: my_env_file
-  volumes:
-    - ./data:/var/lib/mysql
+    env_file: my_env_file
+    volumes:
+      - ./data:/var/lib/mysql
