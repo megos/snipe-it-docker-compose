@@ -7,6 +7,8 @@ services:
     restart: unless-stopped
     depends_on:
       - db
+    volumes:
+      - ./snipeit:/var/lib/snipeit
 
   db:
     image: mysql:5.6
