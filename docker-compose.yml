@@ -5,7 +5,8 @@ services:
   app:
     image: snipe/snipe-it
     restart: unless-stopped
-
+    depends_on:
+      - db
 
   db:
     image: mysql:5.6
