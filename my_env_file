@@ -21,8 +21,8 @@ MAIL_ENV_PASSWORD=your_email_password
 # Snipe-IT Settings
 APP_ENV=production
 APP_DEBUG=false
-APP_KEY=<<Fill in Later!>>
-APP_URL=http://db:3306
+APP_KEY=
+APP_URL=http://127.0.0.1:8080
 APP_TIMEZONE=US/Pacific
 APP_LOCALE=en
 
