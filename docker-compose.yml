@@ -8,6 +8,11 @@ services:
     env_file: my_env_file
     ports:
       - 8080:80
+    environment:
+      - APP_KEY=
+      - APP_URL=http://127.0.0.1:8080
+      - MAIL_FROM_ADDR=you@example.com
+      - MAIL_REPLYTO_ADDR=you@example.com
     depends_on:
       - db
       - mail
