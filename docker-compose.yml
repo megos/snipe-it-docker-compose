@@ -10,6 +10,7 @@ services:
       - 8080:80
     depends_on:
       - db
+      - mail
     volumes:
       - ./snipeit:/var/lib/snipeit
 
@@ -19,3 +20,10 @@ services:
     env_file: my_env_file
     volumes:
       - ./data:/var/lib/mysql
+
+  mail:
+    image: catatnight/postfix
+    restart: unless-stopped
+    environment:
+      - maildomain=example.com
+      - smtp_user=postfix:postfix
